@@ -9,8 +9,9 @@ export default class Friend extends Component {
                 <p>{`Age: ${this.props.friend.age}`}</p>
                 <p>{`Email: ${this.props.friend.email}`}</p>
                 <button onClick={() => {
-                    if(window.confirm(`Are You Sure You Want To Remove ${this.props.friend.name} As Your Friend`)) 
-                    this.props.main.removeFriend(this.props.index);
+                    if(window.confirm(`Are You Sure You Want To Remove ${this.props.friend.name} As Your Friend`)){ 
+                    this.props.main.removeFriend(this.props.i);
+                    }
                 }}>REMOVE</button>
             </div>
         );

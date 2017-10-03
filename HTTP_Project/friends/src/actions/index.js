@@ -15,7 +15,7 @@ export const addFriend = (name, age, email) => {
    const data = axios.post('http://localhost:5000/new-friend', {
 		name: name,
 		age: age,
-		email: email,
+        email: email
     });
     return{
         type: ADD_FRIEND,
@@ -24,7 +24,7 @@ export const addFriend = (name, age, email) => {
 };
 
 export const removeFriend = (index) => {
-    const data = axios.delete('http://localhost:5000/delete-friend', index );
+    const data = axios.delete('http://localhost:5000/delete-friend', {data:{index:index}});
     return {
         type: REMOVE_FRIEND,
         payload: data
