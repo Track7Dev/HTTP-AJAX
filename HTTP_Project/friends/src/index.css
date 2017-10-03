@@ -47,6 +47,7 @@ button:hover {
 }
 #header h1 {
   color: white;
+
 }
 #header span {
   color:#428fbb;
@@ -65,6 +66,10 @@ button:hover {
   padding:0.5% 0;
   background-color: #B8B8B8;
   border-bottom:2px solid #428fbb;
+}
+#author_name span {
+  color: #428fbb;
+  text-shadow: 1px 0px black;
 }
 
 .display-friend{
