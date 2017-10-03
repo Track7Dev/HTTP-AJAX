@@ -4,14 +4,23 @@ export const InputFriend = (props) => {
         
         <form autoComplete="off" onSubmit={(e)=>{
             e.preventDefault();
+
+            const inputName = document.getElementById('input-name');
+            const inputAge =  document.getElementById('input-age');
+            const inputEmail = document.getElementById('input-email');
+
+            if(inputName.value !== '' && inputAge.value !== '' && inputEmail.value !== ''){
             props.main.addFriend(
-                document.getElementById('input-name').value,
-                document.getElementById('input-age').value,
-                document.getElementById('input-email').value
+                inputName.value,
+                inputAge.value,
+                inputEmail.value
             );
-            document.getElementById('input-name').value = '';
-            document.getElementById('input-age').value = '';
-            document.getElementById('input-email').value = '';
+            inputName.value = '';
+            inputAge.value = '';
+            inputEmail.value = '';
+            } else {
+                alert("FILL IN ALL DETAILS FIRST");
+            }
             
         }}>
             <input id="input-name" placeholder="Name"/>

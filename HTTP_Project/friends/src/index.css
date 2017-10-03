@@ -16,6 +16,10 @@ form {
 input{
   margin-right:1%;
   font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  padding: 0.2% 0.5%;
 }
 button {
   background-color: #464545;
@@ -23,6 +27,8 @@ button {
   border: 1px solid white;
   color:white;
   font-weight: 600;
+  -webkit-transition: border 0.5s, color 05s;
+  transition: border 0.5s, color 0.5s;
 }
 button:hover {
   border: 1px solid red;

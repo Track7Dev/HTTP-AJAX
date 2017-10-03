@@ -19,8 +19,12 @@ class FriendsList extends Component {
                         <Friend main={this.props} friend={friend} index={i} />
                     );
                 })}
-                
-                <div id="footer"> Copyright 2017 Track Seven Entertainment & Designs </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+                <div id="footer"> © Copyright 2017 Track Seven Entertainment & Designs </div>
             </div>
         );
     }
