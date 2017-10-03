@@ -16,7 +16,7 @@ class FriendsList extends Component {
                 <InputFriend main={this.props} />
                 {this.props.friends.map((friend, i) => {
                     return (
-                        <Friend main={this.props} friend={friend} index={i} />
+                        <Friend key={i} main={this.props} friend={friend} index={i} />
                     );
                 })}
                 <br/>

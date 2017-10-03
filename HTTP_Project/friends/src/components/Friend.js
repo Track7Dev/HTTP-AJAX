@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Friend extends Component {
     render(){
         return(
-            <div className="display-friend" key={this.props.index}>
+            <div className="display-friend">
                 <p>{`Friend ${this.props.index+1}`}</p>
                 <p>{`Name: ${this.props.friend.name}`}</p>
                 <p>{`Age: ${this.props.friend.age}`}</p>
