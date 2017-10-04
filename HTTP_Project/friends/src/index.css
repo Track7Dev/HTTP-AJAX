@@ -9,11 +9,11 @@ body {
   text-align: center;
 
 }
-form {
+#input-add_form {
   padding-top:1%;
   background-color: #464545
 }
-input{
+#input-name, #input-age, #input-email{
   margin-right:1%;
   font-weight: 600;
   text-align: center;
@@ -87,4 +87,18 @@ button:hover {
   border:2px solid black;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+.input-update_form{
+  display: none;
+  text-align: right;
+  background-color: #5E5D5D;
+  padding:2%;
+  border-radius: 5px;
+  color:#428fbb;
+  border: 2px solid white;
+}
+.input-update_form input {
+  border-radius: 4px;
+  padding-left: 1%;
+  margin-bottom: 1%;
 }

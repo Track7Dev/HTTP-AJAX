@@ -2,7 +2,7 @@ import React from 'react';
 export const InputFriend = (props) => {
     return (
         
-        <form autoComplete="off" onSubmit={(e)=>{
+        <form id='input-add_form' autoComplete="off" onSubmit={(e)=>{
             e.preventDefault();
 
             const inputName = document.getElementById('input-name');

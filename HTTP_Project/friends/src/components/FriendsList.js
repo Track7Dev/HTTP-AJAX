@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { getFriends, addFriend, removeFriend } from '../actions';
+import { getFriends, addFriend, removeFriend, updateFriend } from '../actions';
 import Friend from './Friend';
 import { InputFriend } from './Input-Friend';
 import { Header } from './Header';
@@ -36,4 +36,4 @@ const mapStateToProps = (state) =>{
     };
 };
 
-export default connect(mapStateToProps, { getFriends, addFriend, removeFriend })(FriendsList);
+export default connect(mapStateToProps, { getFriends, addFriend, removeFriend, updateFriend })(FriendsList);
