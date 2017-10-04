@@ -9,7 +9,7 @@ export default class Friend extends Component {
         }
     }
     render(){
-        window.onload = () => {document.getElementById('input-update_form' + this.props.index ).style.display = 'none';};
+        
         return(
             <div className="display-friend">
                 <p>{`Friend ${this.props.index+1}`}</p>
